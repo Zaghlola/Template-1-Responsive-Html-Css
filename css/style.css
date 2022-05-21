@@ -1,0 +1,821 @@
+@font-face {
+    font-family:"ptsans";
+    src: url(../fonts/ptsans/ptsans.ttf)  format("truetype"),
+         url(../fonts/ptsans/ptsans.woff)   format("woff"),
+         url(../fonts/ptsans/ptsans.woff2)  format("woff2")    ;
+}
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+html {
+    font-size: 17px;
+    font-family: "ptsans";
+}
+body{
+
+    background: rgb(255,242,198);
+    background: radial-gradient(circle, rgba(255,242,198,1) 0%, rgba(255,199,0,1) 100%);
+    /* background: url(../images/banner.jpg) center center/cover no-repeat; */
+}
+body p{
+    font-size: 14px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+#sec1{
+    background-color: #000;
+    margin-top: 20px;
+     
+    height: 50px;   
+}
+
+#sec1 .container:first-of-type {
+    position: relative;
+    flex-grow: 1;
+}
+#sec1   header{  
+       
+    display: flex;
+   margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+}
+#sec1   header .brand {
+    /* width: 39%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+#sec1  header .brand h2{
+    color: #FFD11C;
+    font-size: 13px;
+    font-style: italic;
+}
+#sec1 header .brand h2 span{
+font-size: 20px;
+font-style: italic;
+}
+ #sec1   input {
+display: none;
+}
+#sec1  .brand img {
+    width:40px ;
+    margin-right: 8px;
+
+}   
+
+#sec1   input:checked + nav {
+    display: block;
+ 
+}
+
+#sec1    i {
+    font-size: 25px;
+    color: #fff;
+}
+#sec1 .container   ul{
+    list-style: none;
+}
+#sec1 .container   ul li{
+    /* padding: 10px; */
+    background-color: transparent;
+    -webkit-transition: background 0.5s 0s ease;
+-moz-transition: background 0.5s 0s ease;
+-o-transition: background 0.5s 0s ease;
+transition: background 0.5s 0s ease;
+}
+
+#sec1   nav {
+    display: none;
+    width: 100%;
+    
+}
+
+#sec1   ul a{
+    text-decoration: none;
+  
+    background:none;
+    color: #fff;
+   
+   }
+   #sec1 nav ul  a {
+    display: block;
+    text-decoration: none;
+   
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: thin solid #ffcb00;
+    transition: background-color 0.5s ease;}
+
+   /**********Start sec2**********/
+   #sec2{
+    background: url(../images/banner.jpg) center center/cover no-repeat; 
+    align-items: center;
+    padding-top: 100px;
+   }
+ 
+    
+   #sec2 article{
+       margin-bottom: 150px;
+   }
+   #sec2 article p {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+   }
+   #sec2 article h1{
+       font-size: 30px;
+   }
+  h1 span{
+    color:#CD8383 ;
+}
+#sec2 article a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    margin-top:20px;
+    text-decoration: none;
+    color: #000;
+
+    -webkit-transition: background 0.5s 0s ease;
+-moz-transition: background 0.5s 0s ease;
+-o-transition: background 0.5s 0s ease;
+transition: background 0.5s 0s ease;
+}
+#sec2 .text1{
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0px;
+}
+#sec2 .text1 h3{
+    color:#CD8383 ;
+}
+#sec2 .text1 h3{
+    margin-bottom: 20px;
+
+}
+#sec2 .text1 p{
+    text-align: justify;
+}
+   /**********Start sec3**********/
+   #sec3{
+       text-align: center;
+       color: #fff;
+     background-color: #FFCB00;
+     font-size: 30px;
+   }
+   #sec3 h3{
+       padding: 30px 0px;
+   }
+   /**********End sec3**********/
+
+   /**********Start sec4**********/
+   #sec4{
+       padding-top: 30px;
+       background-color: #fff;
+       padding-bottom: 60px;
+   }
+#sec4 .container {
+    display: flex;
+    flex-direction: column;
+ }
+ #sec4 .container h3{
+     font-size: 25px;
+     margin-bottom: 30px;
+ }
+ #sec4 .container .imag3 figure img {
+max-width: 100%;
+height: auto;
+ }
+ 
+#sec4 .container .imag3 figure{
+   background-color: #000;
+   color: #fff;
+   text-align: justify;
+   border-radius: 2px;
+   margin-bottom: 15px;   
+   position: relative;
+} 
+#sec4 .container .imag3 figure .sale{
+    position: absolute;
+    background-color: rgba(14, 14, 14, 0.5);
+    font-size: 22px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 25px;
+    top:20px;
+    left: 15px;
+
+}
+
+#sec4 .container .imag3 figure figcaption {
+padding: 15px;
+
+}
+#sec4 .container .imag3 figure figcaption h3 {
+    color: #FFD400;
+    margin-bottom: 15px;
+}
+   /**********End sec4**********/
+   /**********Start sec5**********/
+  #sec5{
+      padding-top: 50px;
+      background-color: #000;
+      padding-bottom: 40px;
+  } 
+#sec5 .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+ #sec5 .container h3{
+    color: #FFD400;
+    margin-bottom: 30px;
+    font-size: 25px;
+
+ }
+ 
+ #sec5 .container .imag8 figure img {
+    max-width: 100%;
+    height: auto;
+     }
+   /**********End sec5**********/
+   /**********Start sec6**********/
+   #sec6{
+       padding: 30px 0px 50px;
+       /* padding: 0px 40px; */
+       color: #fff;
+       background-color: #FFCB00;
+   }
+   #sec6 .container{
+       display: flex;
+       justify-content:space-between;
+       flex-wrap: wrap;
+       align-items: center;
+   }
+ 
+   #sec6  .container article h3{
+       font-size: 40px;
+       margin-top: 18px;
+   }
+#sec6 .container a{  
+    display: inline-block;
+align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    margin-top:20px;
+    text-decoration: none;
+    color: #000;
+    
+    -webkit-transition: background 0.5s 0s ease;
+-moz-transition: background 0.5s 0s ease;
+-o-transition: background 0.5s 0s ease;
+transition: background 0.5s 0s ease;
+}
+   /**********End sec6**********/
+   /**********Start sec7**********/
+   #sec7 {
+       background-color: #000;
+       padding: 60px 0px ;
+       color: #fff;
+       
+
+   }
+   #sec7 .container  figure img {
+    max-width: 100%;
+    
+    height: auto;
+     }
+     #sec7 .container article{
+         margin-bottom: 30px;
+     }
+     #sec7 .container article h4{
+         
+         font-size: 40px;
+         font-weight: 100;
+         margin-bottom: 15px;
+     }
+     #sec7 .container article p{
+         text-align: justify;
+     }
+     #sec7 .container .imagNum .number{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+     }
+     #sec7 .container .imagNum .number .item{
+         width: 48%; 
+         margin-bottom: 30px;
+
+     }
+     #sec7 .container .imagNum .number .item h2{
+         font-size: 30px;
+         margin-bottom: 20px;
+     }
+     #sec7 .container .imagNum .number .item h5 {
+         margin-bottom: 5px;
+ 
+     }
+   /**********End sec7**********/
+
+    /**********start sec8**********/
+#sec8{
+    background:
+    linear-gradient(rgba(94 ,109 ,129 ,0.6),rgba(94 ,109 ,129 ,0.6)), url(../images/contactus.jpg) no-repeat center center/cover;
+    min-height: 200px;
+    background-attachment: fixed;
+    padding-top:50px ;
+    padding-bottom: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+   
+}
+#sec8 .container article {
+    margin: 20px;
+    margin-top: 0px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+#sec8 .container article h2{
+   color: #FFD400;
+   margin-bottom: 30px;
+}
+#sec8 .container  form input{
+    display: block;
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+
+    margin-bottom: 15px;
+    color: #ccc;
+}
+#sec8 .container  form{
+
+    border-radius: 5px;
+    padding: 20px 30px 5px;
+    margin-top: 37px;
+
+    -webkit-box-shadow: 1px 1px 13px 3px #FFD400;
+-moz-box-shadow: 1px 1px 13px 3px #FFD400;
+box-shadow: 1px 1px 13px 3px #FFD400;
+}
+#sec8 .container  form input[type="submit"]{
+    text-align: center;
+    background-color:  #FFD400;
+    color: #fff;
+}
+
+ /**********End sec8**********/
+ /**********Start sec9**********/
+ #sec9  {
+background-color: #000;
+padding-top: 30px;
+padding-bottom: 50px;
+ }
+#sec9 .container aside ul{
+list-style: none;
+}
+#sec9 .container aside ul li a{
+text-decoration: none;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+#sec9 .container aside:first-child{
+    padding: 0px 70px;
+}
+#sec9 .container aside:first-child ul li  {
+border-bottom: 1px solid #ccc;
+border-width: 50%;
+padding: 10px;
+text-align: center;
+
+}
+
+#sec9 .container aside:nth-child(2){
+    text-align: center;
+    padding-left: 70px;
+    padding-right:68px ;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#sec9 .container aside:nth-child(2) ul{
+    border-bottom: 1px solid #ccc;
+}
+#sec9 .container aside:nth-child(2) ul li {
+display:inline-block;
+padding:20px;
+font-size: 20px;
+}
+#sec9 .container aside ul li a {
+    color: #fff;
+-webkit-transition: color 0.5s 0s ease;
+-moz-transition: color 0.5s 0s ease;
+-o-transition: color 0.5s 0s ease;
+transition: color 0.5s 0s ease;
+}
+    #sec9 .container aside:nth-child(2) ul li  span{
+        display: none;
+    }
+    #sec9 .container aside:last-child{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #sec9 .container aside:last-child a{
+        display: inline;
+        padding: 15px;
+    }
+    #sec9 .container aside:last-child a img{
+        width: 40px;
+        height: 40px;
+
+    }
+    #sec9 .container aside:last-child form{
+        margin-top: 30px;
+        width: 70%;
+    }
+    #sec9 .container aside:last-child input{
+        font-size: 20px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background-color: transparent; 
+      padding-bottom: 5px;
+      color: #fff; 
+      width: 100%;
+    }
+    
+#sec9 .container form input[type="submit"]{
+  
+    display: inline-block;
+align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    margin-top:20px;
+    text-decoration: none;
+    color: #000;
+    
+    -webkit-transition: background 0.5s 0s ease;
+-moz-transition: background 0.5s 0s ease;
+-o-transition: background 0.5s 0s ease;
+transition: background 0.5s 0s ease;
+}
+  /**********End sec9**********/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px)  {  
+    .container{
+        padding: 0;
+        width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container{
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+
+    /*********Start sec4****/
+    #sec4 .container .imag3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    #sec4 .container .imag3 figure{
+        width: 48%;
+    }
+    /*********End sec4****/
+    
+    /*********Start sec5****/
+    #sec5 .container .imag8 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    #sec5 .container .imag8 figure{
+        width: 48.5%;
+        margin-bottom: 20px;
+    }
+    /*********End sec5****/
+    /*********Start sec7****/
+    #sec7 .container .imagNum{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    } 
+    #sec7 .container .imagNum figure{
+        width: 48%;
+
+    } 
+    #sec7 .container .imagNum figure img{
+        max-width: 100%;
+        height: auto;
+
+    } 
+    #sec7 .container .imagNum .number{
+        width: 48%;
+        padding: 20px;
+
+    } 
+    #sec7 .container .imagNum .number .item{
+       
+        margin-bottom: 15px;
+
+    }
+    #sec7 .container .imagNum .number .item h2{
+ 
+        margin-bottom: 10px;
+    }
+
+    /*********End sec7****/
+        /*********Start sec9****/
+
+        #sec9 .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #sec9 .container aside {
+            width: 49%;
+
+        }
+        #sec9 .container aside:last-child{
+            width: 60%;           
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        } 
+        #sec9 .container aside:nth-child(2){
+        padding-top: 10px;
+            margin-bottom: 0px;
+        }
+        #sec9 .container aside:nth-child(2) ul li  span{
+            display: block;
+        }
+        #sec9 .container aside:nth-child(2) ul li {
+            display:block;
+            padding:0px;
+            font-size: 15px;
+          
+            }
+            #sec9 .container aside:nth-child(2) ul{
+                border-bottom:none;
+            }
+           
+            #sec9 .container aside:last-child
+            {
+                justify-self: center;
+
+            }
+
+
+
+
+            /*********End sec9****/
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+    /* html {
+        font-size: 16px;
+    } */
+    .container{
+        width: 930px;
+    }
+        /*********Start sec1****/
+        #sec1 nav ul li{
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        #sec1 nav ul li:hover:not(.social){
+            background-color: #FFD400;
+        } 
+        #sec1 nav ul li a:hover i ,  #sec1 nav ul li a:hover a{
+            color:#FFD400 ;
+            border: 1px solid#FFD400 ;
+        }
+
+    #sec1 label {
+        display: none;
+    }
+    #sec1   input:checked + nav {
+     
+        position: static;
+    }
+    #sec1   nav{
+        display: block;
+        width: auto;
+        position: static;
+     
+    }  
+   #sec1   nav i {
+    display: block;
+}
+#sec1   ul {
+ display:block;
+ color: #fff;
+ list-style: none;
+} 
+#sec1   nav ul :last-child {
+    margin-left: 10px;
+}
+#sec1   nav ul :last-child a:last-child {
+    margin-left: 0px;
+}
+#sec1   ul li{
+ display: inline-block;
+}
+
+
+#sec1   nav ul li a{
+    display: inline-block;
+   
+}
+
+#sec1   nav ul :last-child a{
+    padding: 0px;
+  
+}
+#sec1 nav ul  a {
+    
+    padding: 0px;
+    background-color:transparent;
+    border-bottom:none;
+    transition: background-color 0.5s ease;}
+
+#sec1   nav ul :last-child a i{
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+    /*********End sec1****/
+
+  /*********start sec2****/
+    #sec2 article a:hover{
+        color: #fff;
+        background-color:#CD8383 ;
+    
+    }
+      /*********End sec2****/
+    /*********Start sec4****/
+   
+    #sec4 .container .imag3 figure{
+        width: 32%;
+    }
+    /*********End sec4****/
+       /*********Start sec5****/
+   
+       #sec5 .container .imag8 figure{
+        width: 24%;
+    }
+    /*********End sec5****/
+        /*********Start sec6****/
+        #sec6  .container article{
+            margin-left: 60px;
+        }
+        #sec6 .container a{
+            margin-right: 50px;
+        }
+        #sec6 .container a:hover{
+              color: #fff;
+            background-color:#CD8383 ;
+}
+            /*********End sec6****/
+      /*********Start sec7****/
+            #sec7 .container .imagNum .number .item{
+             
+                margin-bottom: 40px;
+       
+            }
+            #sec7 .container .imagNum .number .item h2{
+               
+                margin-bottom: 30px;
+                font-size: 50px;
+            }
+                  /*********End sec7****/
+                     /*********Start sec8****/
+                     #sec8 .container {
+                         display: flex;
+                         flex-wrap: wrap;
+                         justify-content: space-between;
+                         align-items:flex-start;
+                     }
+                     
+                     #sec8 .container article {
+                         border: none;
+                         width: 56%;
+                     }
+                     #sec8 .container  form{
+                         width: 38%;
+                         margin-top: 0px;
+                     }
+                        /*********End sec8****/
+                        /*********Start sec9****/
+                        
+
+                        #sec9 .container aside , 
+                         #sec9 .container aside:last-child{
+                      
+                            width: 32%;
+                        }
+                        #sec9 .container aside:last-child{
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            margin-top: 0px;
+                        }
+                        #sec9 .container aside ul li a {
+                          
+                            padding: 0px;
+                            padding-bottom: 5px;
+                        }
+                        #sec9 .container aside:first-child ul li {
+                            border-bottom: none;
+                            padding-bottom: 0px;
+                        }
+                        #sec9 .container aside:nth-child(2) ul li  {
+                           padding-bottom: 10px;
+                        }
+
+                        #sec9 .container aside:nth-child(2) ul li a i{
+                            margin-right: 5px;
+                        } 
+
+                        #sec9 .container aside:last-child a{
+                            
+                            padding: 5px;
+                        }
+                        #sec9 .container aside ul li a:hover{
+                            color:#FFD400 ;
+                        }
+                        #sec9 .container form {
+                            text-align: left;
+                        }
+                        #sec9 .container form input[type="submit"]{
+  
+                           width: auto;
+                            padding: 10px 20px;
+                            text-align: left;
+                            font-size: 13px;
+                        }
+                        #sec9 .container form input[type="submit"]:hover {
+                            color: #fff;
+                            background-color:#CD8383 ;
+
+                        }
+                          /*********End sec9****/
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .container{
+        width: 1140px;
+    }
+    
+    #sec-1 .container article{
+       width: 32%;
+    
+    }
+}
